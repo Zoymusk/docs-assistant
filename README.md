@@ -26,3 +26,14 @@ Java 21, Spring Boot, Spring AI, PostgreSQL + pgvector (Docker), local embedding
 - Hybrid search (vector + keyword) to cut irrelevant sources
 - Test set to measure retrieval accuracy
 - Live deployment
+
+## Evaluation
+
+26 questions written from the Spring Boot "how-to" docs, each with the expected source page (`src/main/resources/eval.txt`). Run it at `/eval`.
+
+| Retrieval | Hit@1 | Hit@3 | Hit@8 |
+|---|---|---|---|
+| Vector only (used by `/ask`) | 62% | 85% | 96% |
+| Hybrid (vector + keyword, RRF) | 58% | 81% | 92% |
+
+Hybrid search did not beat plain vector search on this set, including after down-weighting the keyword side, so `/ask` uses vector search with the top 8 chunks. Raising the chunk count from 4 to 8 fixed a wrong answer I saw by hand. The remaining top-1 misses are mostly cases where a `reference/` page ranks above the `how-to/` page, which is a reasonable answer that the test marks wrong.

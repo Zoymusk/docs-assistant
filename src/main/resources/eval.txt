@@ -1,0 +1,26 @@
+How do I change the HTTP port of my application?|how-to/webserver.adoc
+How do I enable HTTPS on the embedded web server?|how-to/webserver.adoc
+How do I enable response compression?|how-to/webserver.adoc
+How do I switch from Tomcat to Jetty?|how-to/webserver.adoc
+How do I change the Actuator management port?|how-to/actuator.adoc
+How do I customize the SpringApplication, for example turn off the banner?|how-to/application.adoc
+How do I run a Spring Batch job on startup?|how-to/batch.adoc
+How do I build an executable jar with Maven?|how-to/build.adoc
+How do I configure a custom DataSource?|how-to/data-access.adoc
+How do I initialize a database with schema.sql and data.sql?|how-to/data-initialization.adoc
+How do I use Flyway or Liquibase for database migrations?|how-to/data-initialization.adoc
+How do I use Docker Compose for services during development?|how-to/docker-compose.adoc
+How do I reload my app automatically when code changes?|how-to/hotswapping.adoc
+How do I call REST APIs with RestClient or WebClient?|how-to/http-clients.adoc
+How do I use Jersey instead of Spring MVC?|how-to/jersey.adoc
+How do I change log levels or configure Logback?|how-to/logging.adoc
+How do I send messages with JMS?|how-to/messaging.adoc
+How do I use Jedis instead of Lettuce for Redis?|how-to/nosql.adoc
+How do I externalize configuration and use profiles?|how-to/properties-and-configuration.adoc
+How do I turn off the default Spring Security configuration?|how-to/security.adoc
+How do I customize the JSON returned by Spring MVC?|how-to/spring-mvc.adoc
+How do I write tests that use Spring Security?|how-to/testing.adoc
+How do I deploy my application to the cloud?|how-to/deployment/cloud.adoc
+How do I install my application as a Linux service?|how-to/deployment/installing.adoc
+How do I create a WAR file for a servlet container?|how-to/deployment/traditional-deployment.adoc
+How do I build a GraalVM native image?|how-to/native-image/developing-your-first-application.adoc
